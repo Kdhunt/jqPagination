@@ -1,0 +1,33 @@
+.hgdialog{
+    background-color:rgba(45,45,45,0.8);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	&.modalOn{
+		z-index: 9999999;
+		display: block;
+	}
+	&.modalOff{
+		z-index: 0;
+		display: none;
+	}
+    .openBox{
+        min-height: 300px;
+		min-width: 300px;
+		display: block;
+		background-color: rgb(255,255,255);
+		margin: 0px auto;
+    
+		.closeme{
+			height: 10px;
+			width: 10px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			background-color: rgb(45,45,45);
+			color: #fff;
+		}
+	}
+}
